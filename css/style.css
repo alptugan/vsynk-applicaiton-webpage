@@ -11,7 +11,7 @@ body { Arial, sans-serif; background: #C8CBCF;}
 	font-weight: normal;
 	font-style: normal;
 }
-
+/*
 @font-face {
 	font-family: 'bold';
 	src: url('../fonts/Lato-Bold.eot');
@@ -19,7 +19,7 @@ body { Arial, sans-serif; background: #C8CBCF;}
 	font-weight: normal;
 	font-style: normal;
 }
-
+*/
 @font-face {
 	font-family: 'black';
 	src: url('../fonts/Lato-Black.eot');
@@ -176,7 +176,7 @@ ul {
 
 .manual.co a,.link a{
 	text-decoration: none;
-	color: #706F6F;
+	color: #b76628;
 }
 
 .manual.co a:hover,.link a:hover{
@@ -209,6 +209,10 @@ h1,h2 {
 
 h2 {
 	font-size: 48px;
+}
+
+span.link {
+	color: #b76628;
 }
 
 .fancybox img {
