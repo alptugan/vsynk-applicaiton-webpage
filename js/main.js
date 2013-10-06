@@ -1,13 +1,14 @@
 var w,h;
 $(window).ready(function() {
 	
+	$('.images a img').addClass('color');
 	
 	$(".fancybox").fancybox({
 		openEffect	: 'fade',
 		closeEffect	: 'fade',
 		padding:[0,0,0,0]
 	});
-	
+
 	
 	
 	$('.logo').append('<span class="hover"></span>').each(function () {

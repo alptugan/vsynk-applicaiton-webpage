@@ -1,6 +1,8 @@
 * { margin: 0; padding: 0; }
 body { Arial, sans-serif; background: #C8CBCF;}
-
+html {
+	font-size: 100%;
+}
 /*article, aside, figure, footer, header, nav, section { display: block; }*/
 
 /* Embed fonts **************************************************/
@@ -50,7 +52,7 @@ body { Arial, sans-serif; background: #C8CBCF;}
 .header {
 	position: relative;
 	float: right;
-	right: 400px;
+	margin-right: 410px;
 	margin-top: 15px;
 }
 .subtitle  {
@@ -137,13 +139,13 @@ ul {
 }
 
 .manual.tr,.manual.pu,.manual.co,.manual.do {
-	top:180px;
+	top:120px;
 	position: relative;
 	margin-bottom: 60px;
 }
 
 .donate {
-	margin-top: 20px;	
+	margin-top: 0;	
 }
 
 .list {
@@ -222,9 +224,84 @@ span.link {
 
 .images {
 	margin-left: 27px;
+	margin-bottom: 12px;
 }
 
 a:-webkit-any-link {
 	text-decoration: none;
 }
 
+.color {
+	-webkit-transition: 0.5s all ease-out; -o-transition: 0.5s all ease-out;
+	-moz-transition: 0.5s all ease-out; transition: 0.5s all ease-out;
+	transition: 0.5s all ease-out; transition: 0.5s all ease-out;
+}
+
+.images a img{
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%); 
+	-moz-filter: grayscale(100%);
+	filter: grayscale(100%);
+	filter: url(desaturate.svg#greyscale);
+	filter: gray;
+	-webkit-filter: grayscale(1);
+	   
+}
+
+.images a img:hover{
+	filter: grayscale(0%);
+	-webkit-filter: grayscale(0%); 
+	-moz-filter: grayscale(0%);
+	filter: grayscale(0%);
+	filter: none;
+	-webkit-filter: grayscale(0);
+}
+
+@media (max-width: 900px) {
+	.pagewrap {
+		margin: 10px 10px 0 10px;
+	}
+
+	.logo {
+		margin-top: 0;
+		
+	}
+	.vid {
+		width: 100% !important;
+	}
+
+	.header {
+		margin-right: 10px;
+		
+	}
+
+	h1 {
+		font-size: 5em;
+	}
+}
+
+@media (max-width: 480px) {
+
+	h1 {
+		font-size: 3.5em;
+		margin-top: 15px;
+	}
+
+	.subtitle {
+		font-size: 0.75em;
+		margin-top: 2px;
+	}
+}
+
+@media (max-width: 402px) {
+
+	h1 {
+		font-size: 3.0em;
+		margin-top: 25px;
+	}
+
+	.subtitle {
+		font-size: 0.58em;
+		margin-top:-2px;
+	}
+}
