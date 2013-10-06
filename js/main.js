@@ -1,6 +1,15 @@
 var w,h;
 $(window).ready(function() {
-	$(window).resize();
+	
+	
+	$(".fancybox").fancybox({
+		openEffect	: 'fade',
+		closeEffect	: 'fade',
+		padding:[0,0,0,0]
+	});
+	
+	
+	
 	$('.logo').append('<span class="hover"></span>').each(function () {
 	  	var $span = $('> span.hover', this).css('opacity', 0);
 
@@ -25,5 +34,10 @@ $(window).ready(function() {
 $(window).resize(function() {
 	w = $(window).width();
 	h = $(window).height();
-});
+	
+	if($('.vid') && w < 940) {
+		$('.vid').css({'width':w,'height':(705/940*w)});
+	}
+	
+}).resize();
 

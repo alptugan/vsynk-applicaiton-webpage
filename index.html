@@ -10,6 +10,7 @@
 	
 	<title>VSYNK</title>
 	
+	<link rel='stylesheet' href='js/jquery.fancybox.css' />
 	<link rel='stylesheet' href='css/style.css' />
 	
 	<!--[if IE]>
@@ -17,7 +18,7 @@
 	<![endif]-->
 
 	<script src='js/jquery.js'></script>
-	<script src='js/main.js'></script>
+	
 </head>
 
 <body>
@@ -31,19 +32,39 @@
 		<div class='holder'>
 			<div class='par'>
 				VSYNK is a video sync application built with openframeworks 0.74 with IOS 10.7 SDK. Currently, VSYNK runs only on Mac OS X. There will be Windows version in the future releases. You can download and install VSYNK software package for free. Free version provides video sync up to two machines. 
+			
+				<iframe class='vid' width="940" height="705" src="http://www.youtube.com/embed/URS6XpP29zI?rel=0" frameborder="0" allowfullscreen></iframe>
+				
 			</div>
 			
+			<!--
 			<ul>
 				<li class='button bl'><a href='#'>Download</a></li>
 				<li class='button gr'><a href='#'>Purchase</a></li>
 				<li class='button rd'><a href='#'>Manual</a></li>
 			</ul>
+			-->
 			
-		</div>
+					</div>
 		
 		<div class="manual">
 			<h2>MANUAL</h2>
 			<p class='list'><span class='dot'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Create Network on your master device</p>
+			
+			<div class='images'>
+				<a class="fancybox" rel="gallery1" href="images/manual/1.png" title="Create Network on your master device">
+					<img src="images/manual/1.png" alt="" width='auto' height='100'/>
+				</a>
+				
+				<a class="fancybox" rel="gallery1" href="images/manual/2.png" title="Create Network on your master device">
+					<img src="images/manual/2.png" alt="" width='auto' height='100'/>
+				</a>
+				
+				<a class="fancybox" rel="gallery1" href="images/manual/3.png" title="Create Network on your master device">
+					<img src="images/manual/3.png" alt="" width='auto' height='100'/>
+				</a>
+			</div>
+			
 			<p class='list'><span class='dot'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Connect to the network, the one you created previous step, from your slave devices</p>
 			<p class='list'><span class='dot'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Run VSYNK-M.app on your master device</p>
 			<p class='list'><span class='dot'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Check your IP Address on Master Device. IP Address should be xxx.xxx.255.255 or xxx.xxx.0.255</p>
@@ -51,13 +72,35 @@
 			<p class='list'><span class='dot'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Drag & Drop your desired video ﬁle  onto VSYNK.app. Video ﬁle plays automatically.</p>
 		</div>
 		
+		<!--
 		<div class="manual tr">
 			<h2>TROUBLESHOOT</h2>
 		</div>
+		-->
 		
 		<div class="manual pu">
-			<h2>PURCHASE</h2>
+			<h2>DONATION</h2>
+			<!--
 			<div class="buy"></div>
+			-->
+			<div class='donate'>
+				<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+				<input type="hidden" name="cmd" value="_donations">
+				<input type="hidden" name="business" value="selcuk@filikatasarim.com">
+				<input type="hidden" name="lc" value="US">
+				<input type="hidden" name="item_name" value="Filika Tasarim">
+				<input type="hidden" name="no_note" value="0">
+				<input type="hidden" name="currency_code" value="USD">
+				<input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHostedGuest">
+				<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+				<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+			</form>
+			</div>
+		</div>
+		
+		<div class="manual do">
+			<h2>DOWNLOAD</h2>
+			<p class='link'><a href='#'>Download VSYNK Master & VSYNK Slave</a></p>
 		</div>
 		
 		<div class="manual co">
@@ -66,7 +109,12 @@
 		</div>
 		
 		
+		
 	</div>
+	
+	
+	<script src='js/jquery.fancybox.pack.js'></script>
+	<script src='js/main.js'></script>
 	
 	
 </body>

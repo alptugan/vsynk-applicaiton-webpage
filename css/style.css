@@ -92,7 +92,7 @@ ul {
 	text-decoration: none;
 	margin-right: 10px;
 }
-a:hover {
+.button a:hover {
 	box-shadow: 4px 4px 0px #BB6218;
 	margin-top: -4px;
 	
@@ -113,7 +113,7 @@ a:hover {
 	background: #BB6218;
 }
 
-.par,.list {
+.par,.list,.link a {
 	font-family: 'regular';
 	font-size: 22px;
 	line-height: 30px;
@@ -122,16 +122,28 @@ a:hover {
 	top: 50px;
 }
 
+.vid {
+	margin-top: 30px;
+}
+
+.link a {
+	top: 10px;
+}
 
 
 .manual  {
-	top:150px;
+	top:80px;
 	position: relative;
 }
 
-.manual.tr,.manual.pu,.manual.co {
+.manual.tr,.manual.pu,.manual.co,.manual.do {
 	top:180px;
 	position: relative;
+	margin-bottom: 60px;
+}
+
+.donate {
+	margin-top: 20px;	
 }
 
 .list {
@@ -162,12 +174,12 @@ a:hover {
 	padding-bottom: 100px;
 }
 
-.manual.co a{
+.manual.co a,.link a{
 	text-decoration: none;
 	color: #706F6F;
 }
 
-.manual.co a:hover{
+.manual.co a:hover,.link a:hover{
 	text-shadow: 1px 1px 0 #fff;
 	box-shadow: 0 0 0 #BB6218;
 
@@ -199,6 +211,16 @@ h2 {
 	font-size: 48px;
 }
 
+.fancybox img {
+	margin-top: 10px;
+	margin-right: 5px;
+}
 
+.images {
+	margin-left: 27px;
+}
 
+a:-webkit-any-link {
+	text-decoration: none;
+}
 
